@@ -1,0 +1,172 @@
+
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header-image {
+  background-image: url('../images/belfast2.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait {
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: -150px;
+  border-width: 10px;
+  border-color: white;
+  border-style: solid;
+
+}
+
+.intro {
+  font-family: 'Open Sans', sans-serif;
+
+  margin-top: 100px;/* projects */
+  width: 60%;
+  text-align: center;
+  font-size: x-large;
+}
+
+.intro-name {
+  margin: 0px;
+}
+
+.intro-text {
+  margin: 0px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.intro > .links > a > i {
+  color: black;
+}
+
+/* projects */
+
+.body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 30px;
+}
+
+.projects {
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-grid {
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.project {
+  min-height: 300px;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: auto;
+}
+
+
+.project__image {
+  width: 100%;
+  display: block;
+  max-height: 150px;
+}
+
+.project__content {
+  padding: 20px;
+  line-height: 1.5;
+  background-color: #fafafa;
+}
+
+.project__name {
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.project__info {
+  margin-bottom: 0px;
+  font-size: 0.9em;
+}
+
+
+/* footer */
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  background-color: #294F6D;
+  height: 160px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.footer__info {
+  margin-left: 20px;
+  color: white;
+
+}
+
+
+.footer__title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.footer__text {
+  margin: 0;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.footer__link {
+
+  margin-top: 10px;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+
+.footer__link > a > i {
+  color: white;
+  margin-right: 10px;
+}
+
+.footer > .links > a > i {
+  color: white;
+}
+
+.footer > .links  {
+  margin-right: 40px;
+}
+
+
+
