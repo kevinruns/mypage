@@ -9,12 +9,11 @@
   align-items: center;
 }
 
-
 .header-image {
   background-image: url('../images/belfast2.jpeg');
   background-size: cover;
   background-position: center;
-  height: 250px;
+  height: 25vh;
   width: 100%;
   align-items: center;
   display: flex;
@@ -23,22 +22,20 @@
 }
 
 .portrait {
-  height: 250px;
+  max-height: 25vh;
   border-radius: 50%;
-  margin-bottom: -150px;
-  border-width: 10px;
+  margin-bottom: -15vh;
+  border-width: 0.5em;
   border-color: white;
   border-style: solid;
-
 }
 
 .intro {
   font-family: 'Open Sans', sans-serif;
-
-  margin-top: 100px;/* projects */
+  margin-top: 4em;/* projects */
   width: 60%;
   text-align: center;
-  font-size: x-large;
+  font-size: 1.3em;
 }
 
 .intro-name {
@@ -47,14 +44,14 @@
 
 .intro-text {
   margin: 0px;
+  margin-bottom: 1em;
 }
 
 .links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1em;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .intro > .links > a > i {
@@ -126,20 +123,17 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
 .footer__info {
   margin-left: 20px;
   color: white;
 
 }
 
-
 .footer__title {
   margin-top: 15px;
   margin-bottom: 10px;
   font-weight: bold;
 }
-
 
 .footer__text {
   margin: 0;
@@ -148,7 +142,6 @@
 }
 
 .footer__link {
-
   margin-top: 10px;
   font-size: 0.8em;
   margin-bottom: 5px;
@@ -157,7 +150,6 @@
 
 .footer__link > a > i {
   color: white;
-  margin-right: 10px;
 }
 
 .footer > .links > a > i {
@@ -165,8 +157,66 @@
 }
 
 .footer > .links  {
-  margin-right: 40px;
+  margin-right: 2em;
 }
 
+/* responsive styling */
 
+@media (max-width: 600px) {
+
+  .intro {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5em;/* projects */
+    width: 60%;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .footer__text {
+    margin: 0;
+    font-size: 0.6em;
+    margin-bottom: 5px;
+  }
+
+  .footer__link {
+    margin-top: 10px;
+    font-size: 0.6em;
+    margin-bottom: 5px;
+  }
+
+  .project-grid {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .portrait {
+    max-height: 20vh;
+    border-radius: 50%;
+    margin-bottom: -15vh;
+    border-width: 0.5em;
+    border-color: white;
+    border-style: solid;
+  
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .footer > .links  {
+    margin-right: 1em;
+  }
+  
+  .project__info {
+    margin-bottom: 0px;
+    font-size: 0.8em;
+  }
+
+}
 
